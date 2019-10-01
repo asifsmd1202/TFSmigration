@@ -1,0 +1,20 @@
+login into ec2
+sudo su (change to root)
+su - jenkis (switch user jenkins)
+we get (-bash-4.2)like
+try to login atmecs(user in tomcat)in jenkins server
+ssh atmecs@tomcatip
+cd .ssh/
+cat id_rsa.pub
+once the keys gets displayed..check also in tomcat instance for the keys
+
+ssh keygen
+ssh-copy-id atmecs@tomcatip
+
+
+
+In tomcat to check keys..
+root/bin/
+cd /home/atmecs/
+cd .ssh/
+vim authorized_keys
